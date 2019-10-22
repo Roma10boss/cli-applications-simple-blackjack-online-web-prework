@@ -40,8 +40,8 @@ def hit?(total)
   # code hit? here
   prompt_user
   user_hit = get_user_input
-  if user_hit = "s"
-    elsif user_hit = "h"
+  if user_hit == "s"
+    elsif user_hit == "h"
     total += deal_card
     display_card_total(total)
     if total > 21 
