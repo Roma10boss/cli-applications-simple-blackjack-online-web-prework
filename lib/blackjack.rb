@@ -44,9 +44,12 @@ def hit?(total)
     elsif user_hit == 'h'
     total += deal_card
     display_card_total(total)
+    {
     if total > 21 
     end_game(total)
     end
+      
+    }
   else 
     invalid_command
     prompt_user
