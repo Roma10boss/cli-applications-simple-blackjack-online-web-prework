@@ -5,17 +5,18 @@ end
 
 def deal_card
   # code #deal_card here
-  rand 1..11
+  return rand 1..11
 end
 
 def display_card_total(number)
   # code #display_card_total here
-  number = rand 1..11
-  puts "Your cards add up to" + card
+  number = 
+  puts "Your cards add up to #{total}"
 end
 
 def prompt_user
   # code #prompt_user here
+  puts 
 end
 
 def get_user_input
