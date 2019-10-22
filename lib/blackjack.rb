@@ -26,19 +26,37 @@ end
 
 def end_game
   # code #end_game here
-  puts 
+  puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
 def initial_round
   # code #initial_round here
+  total = deal_card + deal_card 
+  display_card_total(total)
+  return total
 end
 
 def hit?
   # code hit? here
+  prompt_user
+  user_hit = get_user_input
+  if user_hit = "s"
+    elsif user_hit = "h"
+    total += deal_card
+    display_card_total(total)
+    if total > 21 
+    end_game(total)
+    end
+  else 
+    invalid_command
+    prompt_user
+  end
+  return total
 end
 
 def invalid_command
   # code invalid_command here
+  puts " Enter a valid command"
 end
 
 #####################################################
