@@ -16,15 +16,17 @@ end
 
 def prompt_user
   # code #prompt_user here
-  puts 
+  puts "Type 'h' to hit or 's' to stay"
 end
 
 def get_user_input
   # code #get_user_input here
+  input = getd.chomp
 end
 
 def end_game
   # code #end_game here
+  puts 
 end
 
 def initial_round
